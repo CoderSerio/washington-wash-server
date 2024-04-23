@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: washington-wash-user
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/adpush?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: yueyin
+    password: YUEYIN
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+dubbo:
+  application:
+    name: washington-user
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://127.0.0.1:8848
