@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class User {
     private Integer userId;
     private Integer type; // 1 用户 2 商家

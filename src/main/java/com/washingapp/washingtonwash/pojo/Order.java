@@ -7,12 +7,10 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class Order {
     private Integer orderId;
     private Integer userId;
     private Integer businessId;
     private JSONObject orderInfo;
-    private JSONObject comment;
-
+    private String comment;
 }
