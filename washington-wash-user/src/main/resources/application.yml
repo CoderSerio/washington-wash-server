@@ -1,14 +1,14 @@
 server:
-  port: 8080
+  port: 8082
 
 spring:
   application:
     name: washington-wash-user
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://127.0.0.1:3306/adpush?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
-    username: yueyin
-    password: YUEYIN
+    url: jdbc:mysql://103.40.13.47:7322/WASHINGTON_WASH?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: public_root
+    password: NIGANJIECHIWODESHUJUKU,WOJIUCAOSINIDEMA!
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 dubbo:

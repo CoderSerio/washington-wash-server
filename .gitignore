@@ -1,33 +1,155 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# General ignores for Java projects
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IDE-specific files and directories
+.idea/
 *.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+out/
+target/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+*.classpath
+*.project
+*.settings/
 
-### VS Code ###
-.vscode/
+# Build artifacts and intermediates
+*.jar
+*.war
+*.ear
+*.nar
+*.par
+*.zip
+*.tar.gz
+*.rar
+*.ace
+*.7z
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+dist/
+release/
+dependency-reduced-pom.xml
+node_modules/
+nacos/
+
+# Generated files
+*.class
+*.hprof
+*.jfr
+*.proto
+*.stackdump
+hs_err_pid*
+
+# Test outputs
+test-output/
+test-results/
+junitreports/
+jacoco.exec
+
+# Local configuration files
+local.*
+config/local.*
+
+# Logs and temporary files
+logs/
+*.log
+*.log.*
+*.tmp
+*.temp
+*.swp
+*.swo
+*.swx
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Maven-specific ignores
+mvnw
+mvnw.cmd
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/
+
+# Gradle-specific ignores
+.gradle/
+gradle-wrapper.jar
+gradlew
+gradlew.bat
+
+# Eclipse-specific files
+.metadata/
+.classpath.user
+.project.user
+
+# IntelliJ IDEA-specific files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/*.ipr
+.idea/*.iws
+.idea/*.iml
+
+# NetBeans-specific files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+.nb-gradle/
+netbeans-binaries.zip.sha1
+
+# Javadoc and source code jars
+*.javadoc.jar
+*.sources.jar
+
+# Endorsed standards override
+.endorsed/
+
+# Keystore files
+*.keystore
+*.jks
+
+# Native libraries
+lib/native/
+
+# Continuous Integration files
+.travis.yml
+circle.yml
+codeship-services.yml
+codeship-steps.yml
+appveyor.yml
+
+# Coveralls.io coverage reports
+.coverage
+coverage/
+
+# Code Climate configuration files
+.codeclimate.yml
+
+# Codebeat configuration file
+.codebeat.json
+
+# Hound configuration file
+.hound.yml
+
+# Editor configurations
+.editorconfig
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Sublime Text
+*.sublime-workspace
+
+# IntelliJ IDEA inspection profiles
+*.idea/codeStyles
+*.idea/inspectionProfiles
